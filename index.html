@@ -1,0 +1,156 @@
+<!-- code เริ่มต้น `html:5 => enter` -->
+<!DOCTYPE html>
+<html lang="en"> <!-- Attribute lang="en" เพื่อประกาศภาษาของเว็ปเพจ en -->
+<head><!-- ส่วน head ของ html -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Attribute name="viewport" ทำให้แสดงผลในมือถือได้ -->
+    <meta name="description" content="เว็ปสรุป HTML5"><!-- Attribute name="description" รายละเอียดของ website -->
+    <meta name="author"  content="Bird pakornpong"><!-- Attribute name="author" ผู้พัฒนา -->
+    <meta name="keywords" content="html5"><!-- Attribute name="keywords" keywords ในการค้นหา -->
+    <title>HTML5 conclusion</title><!-- หัวข้อ ชื่อที่ขึ้นของ website -->
+    <style type="text/css">
+        .float-left-article {
+            width: 500px;
+            height: 160px;
+            margin: 20px;
+            background: #19c7e6;
+            float: left
+        }
+        .float-left-article2 {
+            width: 1100px;
+            height: 400px;
+            margin: 20px;
+            background: #19c7e6;
+            float: left
+        }
+        .float-right-article {
+            width: 160px;
+            height: 440px;
+            margin: 20px;
+            background: #19c7e6;
+            float: right
+        }
+        .float-right-article2 {
+            width: 500px;
+            height: 160px;
+            margin: 20px;
+            background: #19c7e6;
+            float: right
+        }
+        .clear-article {
+            width: 600px;
+            height: 120px;
+            margin: 40px;
+            padding: 20px;
+            background: #268b37;
+            clear: both;
+        }
+        .block-1 {
+            width: 120px;
+            height: 120px;
+            margin: 20px;
+            background: #0E9F98
+        }
+        .block-2 {
+            width: 120px;
+            height: 120px;
+            margin: 20px;
+            background: #04BF9D
+        }
+        .block-3 {
+            width: 120px;
+            height: 120px;
+            margin: 20px;
+            background: #F4E85C
+        }
+        .block-center {
+            width: 120px;
+            height: 120px;
+            background: #F4E85C
+        }
+        .block-full {
+            width: 120px;
+            height: 120px;
+            background: #F4E85C
+        }
+       .float-left-1 {
+        width: 120px;
+        height: 120px;
+        margin: 20px;
+        background: #0E9F98;
+        float: left;
+       }
+       .float-left-2 {
+        width: 120px;
+        height: 120px;
+        margin: 20px;
+        background: #04BF9D;
+        float: left;
+       }
+       .float-left-3 {
+        width: 120px;
+        height: 120px;
+        margin: 20px;
+        background: #F4E85C;
+        float: left;
+       }
+       .float-right-1 {
+        width: 120px;
+        height: 120px;
+        margin: 20px;
+        background: #0E9F98;
+        float: right;
+       }
+       .float-right-2 {
+        width: 120px;
+        height: 120px;
+        margin: 20px;
+        background: #04BF9D;
+        float: right;
+       }
+       .float-right-3 {
+        width: 120px;
+        height: 120px;
+        margin: 20px;
+        background: #F4E85C;
+        float: right;
+       }
+    </style>
+</head>
+<body><!-- ส่วน body ของ html -->
+    <article class="float-left-article">
+        <section class="float-left-1">float left 1</section>
+        <section class="float-left-2">float left 2</section>
+        <section class="float-left-3">float left 3</section>       
+    </article>
+    <article class="float-left-article">
+        <section class="float-right-1">float right 1</section>
+        <section class="float-right-2">float right 2</section>
+        <section class="float-right-3">float right 3</section>       
+    </article>
+    <article class="clear-article">
+        <section class="block-center">Block center</section>
+    </article>
+    <article class="float-right-article">
+        <section class="block-1">Block 1</section>
+        <section class="block-2">Block 2</section>
+        <section class="block-3">Block 3</section>
+    </article>
+    <article class="float-left-article2">
+        <article class="float-left-article">
+            <section class="float-left-1">float left 1</section>
+            <section class="float-left-2">float left 2</section>
+            <section class="float-left-3">float left 3</section>       
+        </article> 
+        <article class="float-right-article2">
+            <section class="float-right-1">float right 1</section>
+            <section class="float-right-2">float right 2</section>
+            <section class="float-right-3">float right 3</section>       
+        </article>  
+        <article class="clear-article">
+            <section class="block-center-full">Block center</section>
+        </article>
+    </article>
+</body>
+</html>
