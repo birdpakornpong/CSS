@@ -1,9 +1,25 @@
-.text-center {
-    text-align: center;
+::selection {  /* ตอนเลือกเปลี่ยนสีพื้นหลัง */
+    background-color: pink;
 }
-.kumkom {
+.quip,
+.quip2,
+.quip3 {
     text-align: center;
     padding: 10px; 
     border: 2px solid lightgray;
     font-size: 20px;
+}
+.quip::first-letter {
+    font-size: 30px;
+    color: skyblue;
+}
+.quip2::first-line {
+    font-size: 30px;
+    color: palevioletred
+}
+.quip3::before,
+.quip3::after {
+    content: ' " ';
+    font-size: 30px;
+    color: slateblue;
 }
