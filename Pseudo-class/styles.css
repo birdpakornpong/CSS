@@ -23,6 +23,12 @@
     background-color: rgb(237, 237, 237);
     border-color: pink;
 }
+.color-text p:first-child i:first-child {
+    color: red;
+}
+.color-text p:first-child i:last-child {
+    color: blue;
+}
 .eye-test {
     border: 1px solid black;
     padding: 20px;
@@ -74,3 +80,42 @@
 .eye-test2 p:nth-of-type(2n-1) {
     color: blue;
 }
+.layout-article {
+    margin: 10px;
+    padding: 20px 20px 50px 20px;  /* top right buttom left / บน ขวา ล่าง ซ้าย */  
+}
+.layout-section {
+    float: left;
+}
+.layout-section label {
+    margin-right: 15px;
+}
+input.checkbox-x {
+    transform : scale(2);
+    margin-right: 10px;
+}
+input.radio-x {
+    transform: scale(2);
+    margin-right: 10px;
+}
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 2px blue;
+}
+input[type="radio"]:checked {
+    box-shadow: 0 0 0 2px red;
+}
+input[type="submit"]:hover {
+    background-color: yellow;
+    color: red;
+}
+input[type="submit"]:active {
+    background-color: pink;
+    color: green;
+}
+a:link { /* สภาวะ link ยังไม่เยี่ยมชม */
+    color: red;
+}
+a:visited { /* สภาวะ visited เยี่ยมชมแล้ว */
+    color: pink
+}
+

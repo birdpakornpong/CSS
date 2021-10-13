@@ -1,0 +1,9 @@
+.text-center {
+    text-align: center;
+}
+.kumkom {
+    text-align: center;
+    padding: 10px; 
+    border: 2px solid lightgray;
+    font-size: 20px;
+}
