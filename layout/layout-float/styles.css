@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+header {
+    background-color: orange;
+    height: 100px;
+}
+aside {
+    background-color: skyblue;
+    float: left;
+    width: 25%;
+    height: 600px;
+}
+article {
+    background-color: palegreen;
+    float: right;
+    width: 75%;
+    height: 600px;
+}
+footer {
+    background-color: slateblue;
+    height: 100px;
+    clear: both;
+}
+.section-a {
+    background-color: aqua;
+    float: left;
+    width: 50%;
+    height: 350px;
+}
+.section-b {
+    background-color: peachpuff;
+    float: right;
+    width: 50%;
+    height: 350px;
+}
+.section-b {
+    background-color: peachpuff;
+    float: right;
+    width: 50%;
+    height: 350px;
+}
+.section-c {
+    background-color: rosybrown;
+    clear: both;
+    width: 100%;
+    height: 250px;
+}
