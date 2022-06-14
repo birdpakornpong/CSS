@@ -6,11 +6,13 @@
     padding: 10px;
     text-decoration: none;
 }
+
 /* pseudo-class :hover  แสดงผลเมื่อเมาส์อยู่วัตถุ */
 .link-button:hover {
     color: white;
     background-color: rgb(60, 60, 60);
 }
+
 .text-input {
     background-color: white;
     padding: 10px;
@@ -18,104 +20,144 @@
     outline: none;
     border: 3px solid rgb(103, 103, 103);
 }
+
 /* pseudo-class :focus  แสดงผลเมื่อคลิที่วัคถุ จนกว่าจะคลิกที่อื่น */
 .text-input:focus {
     background-color: rgb(237, 237, 237);
     border-color: pink;
 }
+
 .color-text p:first-child i:first-child {
     color: red;
 }
+
 .color-text p:first-child i:last-child {
     color: blue;
 }
+
 .eye-test {
     border: 1px solid black;
     padding: 20px;
 }
-.eye-test p { /* อ้างถึง html element p ที่อยู่ภายใน element ที่ประกาศ class eye-test */
+
+.eye-test p {
+    /* อ้างถึง html element p ที่อยู่ภายใน element ที่ประกาศ class eye-test */
     margin: 0
 }
+
 /* pseudo-class :first-child  อ้างถึงลูกคนแรก */
 .eye-test p:first-child {
     font-size: 80px;
 }
+
 /* pseudo-class :nth-child(n) */
 .eye-test p:nth-child(2) {
     font-size: 60px;
 }
+
 .eye-test p:nth-child(3) {
     font-size: 40px;
 }
+
 /* pseudo-class :last-child */
 .eye-test p:last-child {
     font-size: 20px;
 }
+
 .eye-test2 {
     border: 1px solid black;
     padding: 20px;
 }
+
 .eye-test2 p {
     margin: 0;
 }
+
 /* pseudo-class :first-of-type  อ้างถึงลูกคนแรกที่เป็น tag p */
 .eye-test2 p:first-of-type {
     font-size: 80px;
 }
+
 /* pseudo-class :nth-of-type(n) */
 .eye-test2 p:nth-of-type(2) {
     font-size: 60px;
 }
+
 .eye-test2 p:nth-of-type(3) {
     font-size: 40px;
 }
+
 /* pseudo-class :last-of-type */
 .eye-test2 p:last-of-type {
     font-size: 20px;
 }
+
 /* child or of-type แบบคู่คี่ */
 .eye-test2 p:nth-of-type(2n) {
     color: red;
 }
+
 .eye-test2 p:nth-of-type(2n-1) {
     color: blue;
 }
+
 .layout-article {
     margin: 10px;
-    padding: 20px 20px 50px 20px;  /* top right buttom left / บน ขวา ล่าง ซ้าย */  
+    padding: 20px 20px 50px 20px;
+    /* top right buttom left / บน ขวา ล่าง ซ้าย */
 }
+
 .layout-section {
     float: left;
 }
+
 .layout-section label {
     margin-right: 15px;
 }
+
 input.checkbox-x {
-    transform : scale(2);
+    transform: scale(2);
     margin-right: 10px;
 }
+
 input.radio-x {
     transform: scale(2);
     margin-right: 10px;
 }
+
 input[type="checkbox"]:checked {
     box-shadow: 0 0 0 2px blue;
 }
+
 input[type="radio"]:checked {
     box-shadow: 0 0 0 2px red;
 }
+
 input[type="submit"]:hover {
     background-color: yellow;
     color: red;
 }
+
 input[type="submit"]:active {
     background-color: pink;
     color: green;
 }
-a:link { /* สภาวะ link ยังไม่เยี่ยมชม */
+
+a:link {
+    /* สภาวะ link ยังไม่เยี่ยมชม */
     color: red;
 }
-a:visited { /* สภาวะ visited เยี่ยมชมแล้ว */
+
+a:visited {
+    /* สภาวะ visited เยี่ยมชมแล้ว */
     color: pink
 }
 
+/* section h5,
+section p {
+    color: red;
+} */
+
+section :where(h5, p) {
+    color: blue
+}

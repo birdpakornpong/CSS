@@ -1,0 +1,14 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background: -webkit-radial-gradient(50% 0%, farthest-corner, blue, black, black);
+    /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(50% 0%, farthest-corner, blue, black, black);
+    /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(50% 0%, farthest-corner, blue, black, black);
+    /* For Firefox 3.6 to 15 */
+    background: radial-gradient(farthest-corner at 50% 0%, blue, black, black);
+    /* Standard syntax (must be last) */
+
+    color: white
+}

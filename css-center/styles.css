@@ -1,0 +1,8 @@
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    border: 2px solid red;
+    text-align: center;
+    padding: 3rem;
+    /* display: flex; */
+}
